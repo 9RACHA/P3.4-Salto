@@ -1,12 +1,13 @@
 using Unity.Netcode;
 using UnityEngine;
 
-namespace PlayerMove
-{
-    public class PlayerMovement : NetworkBehaviour
+    public class PlayerSimple : NetworkBehaviour
     {
         // Variable de red que almacena la posición del jugador
         public NetworkVariable<Vector3> Position = new NetworkVariable<Vector3>();
+
+        // Referencia al componente rigidbody para aplicar gravedad y colisiones
+        private Rigidbody rb;
 
         // Método que se ejecuta cuando el jugador es creado en la red
         public override void OnNetworkSpawn()
@@ -71,6 +72,10 @@ namespace PlayerMove
                 else if (Input.GetKeyDown(KeyCode.UpArrow))
                     direction = Vector3.forward;
 
+               /* else if (Input.GetKeyDown(KeyCode.Space)){ 
+                    direction = Vector3.up;
+                } */
+
                 // Si se ha presionado alguna tecla de flecha, solicita el cambio de posición al servidor
                 if (direction != Vector3.zero)
                     RequestPositionChangeServerRpc(direction);
@@ -78,7 +83,6 @@ namespace PlayerMove
 
             // Actualiza la posición del objeto en el mundo del juego basándose en el valor actual de la variable de red Position, 
             // asegurando que el movimiento se sincronice correctamente en todos los clientes
-            transform.position = Position.Value;
+            transform.position = Position.Value; //no va a ser necesaria
         }
     }
-}

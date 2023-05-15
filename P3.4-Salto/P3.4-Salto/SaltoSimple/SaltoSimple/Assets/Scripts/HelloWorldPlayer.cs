@@ -18,6 +18,9 @@ namespace HelloWorld
         // Referencia al componente Renderer del jugador
         private Renderer r;
 
+        // Referencia al componente rigidbody para aplicar gravedad y colisiones
+        private Rigidbody rb;
+
         // Método llamado cuando el jugador se crea en red
         public override void OnNetworkSpawn()
         {
@@ -30,16 +33,7 @@ namespace HelloWorld
 
         public void Move()
         {
-            //Podria eliminarse
-            /*if (NetworkManager.Singleton.IsServer) {
-                var randomPosition = GetRandomPositionOnPlane(); // Generar una posición aleatoria en un plano
-                transform.position = randomPosition; // Actualizar la posición del jugador localmente
-                Position.Value = randomPosition; // Actualizar la posición del jugador en la red
-            }
-            else
-            {*/
                 SubmitPositionRequestServerRpc(); // Enviar una solicitud al servidor para mover el jugador
-           // }
         }
 
         // Procesa la solicitud de posición del jugador
@@ -70,7 +64,6 @@ namespace HelloWorld
             coloresDisponibles.Add(Color.red);
             coloresDisponibles.Add(Color.green);
             coloresDisponibles.Add(Color.clear); //Transparente
-            //Añadir 1 mas
         }
         
         public Color ColorAleatorio(bool first = false) {
