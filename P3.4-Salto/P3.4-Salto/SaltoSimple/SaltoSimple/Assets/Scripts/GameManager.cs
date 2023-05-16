@@ -6,7 +6,7 @@ using UnityEngine;
         void OnGUI()
         {
             GUILayout.BeginArea(new Rect(10, 10, 300, 300));
-            //Revisar
+            
             if (!NetworkManager.Singleton.IsClient && !NetworkManager.Singleton.IsServer)
             {
                 StartButtons();
@@ -27,7 +27,7 @@ using UnityEngine;
 
         static void StatusLabels()
         {
-            //Revisar
+            
             var mode = NetworkManager.Singleton.IsHost ?
                 "Host" : NetworkManager.Singleton.IsClient ? "Server" : "Client";
 

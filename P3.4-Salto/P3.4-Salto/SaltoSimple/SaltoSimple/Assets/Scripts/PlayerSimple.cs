@@ -2,12 +2,15 @@ using Unity.Netcode;
 using UnityEngine;
 
     public class PlayerSimple : NetworkBehaviour
-    {
-        // Variable de red que almacena la posición del jugador
+    {   
+        //ESTADO
+        // Variable de red que almacena la posición del jugador 
         public NetworkVariable<Vector3> Position = new NetworkVariable<Vector3>();
 
         // Referencia al componente rigidbody para aplicar gravedad y colisiones
         private Rigidbody rb;
+
+        private bool isGrounded = true;
 
         // Método que se ejecuta cuando el jugador es creado en la red
         public override void OnNetworkSpawn()
@@ -19,6 +22,7 @@ using UnityEngine;
             }
         }
 
+        //ACCION 
         // RPC que se ejecuta en el servidor para generar una posición inicial aleatoria
         [ServerRpc]
         void RequestInitialPositionServerRpc()
@@ -34,11 +38,14 @@ using UnityEngine;
         [ServerRpc]
         void RequestPositionChangeServerRpc(Vector3 direction)
         {
-            // Actualiza la posición sumando la dirección especificada
+            if (isGrounded)
+            {
+                // Actualiza la posición sumando la dirección especificada
             Position.Value += direction;
 
             // Actualiza la posición en los clientes para sincronizar el movimiento
             UpdatePositionClientRpc(Position.Value);
+            } 
         }
 
         // RPC que se ejecuta en los clientes para sincronizar la posición
@@ -62,6 +69,8 @@ using UnityEngine;
             {
                 Vector3 direction = Vector3.zero;
 
+
+
                 // Detecta las flechas para determinar la dirección del movimiento
                 if (Input.GetKeyDown(KeyCode.LeftArrow))
                     direction = Vector3.left;
@@ -71,18 +80,24 @@ using UnityEngine;
                     direction = Vector3.back;
                 else if (Input.GetKeyDown(KeyCode.UpArrow))
                     direction = Vector3.forward;
+                    
+                else if (Input.GetKey(KeyCode.Space) && isGrounded){
+                direction = Vector3.up; // Saltar multiplicando la dirección hacia arriba por una fuerza
+                isGrounded = false; // Establecer isGrounded a falso para evitar saltos múltiples en el aire
+                }
 
-               /* else if (Input.GetKeyDown(KeyCode.Space)){ 
-                    direction = Vector3.up;
-                } */
-
-                // Si se ha presionado alguna tecla de flecha, solicita el cambio de posición al servidor
+                // Si se ha presionado alguna tecla, solicita el cambio de posición al servidor
                 if (direction != Vector3.zero)
                     RequestPositionChangeServerRpc(direction);
             }
-
-            // Actualiza la posición del objeto en el mundo del juego basándose en el valor actual de la variable de red Position, 
+          // Actualiza la posición del objeto en el mundo del juego basándose en el valor actual de la variable de red Position, 
             // asegurando que el movimiento se sincronice correctamente en todos los clientes
             transform.position = Position.Value; //no va a ser necesaria
-        }
+           
     }
+            // Método para detectar si el jugador está en el suelo
+            private void OnCollisionEnter(Collision collision)
+        {
+            isGrounded = true;
+        }
+}
