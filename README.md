@@ -7,5 +7,7 @@ Fai que o código sexa o máis eficiente posible, sen partes que sobren, sen có
 Entregable:
 
 O script ou scripts relevante
+
 Un pequeno informe cun par de capturas que demostren que o xogo funciona e coas explicacións que consideres axeitadas
+
 O enderezo de github que contén o proxecto
