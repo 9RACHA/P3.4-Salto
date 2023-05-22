@@ -262,7 +262,7 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 693360116}
-    PlayerPrefab: {fileID: 7606192464399510096, guid: c693acac45019854c80ce0e71aa1c6b7, type: 3}
+    PlayerPrefab: {fileID: 5502735590934192471, guid: 5036512443eaeb94d911fe59ea37a757, type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: 0cd44197f98f3a945a2822191bd12ba8, type: 2}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 1351644473}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
