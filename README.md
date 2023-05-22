@@ -17,3 +17,5 @@ O enderezo de github que contén o proxecto
 
 Al principio cambié el script de Ejemplo llamado HelloWorlManager y lo renombré GameManager después eliminé los botones de Server ya que no lo usaremos. Tambien elimine los metodos encargados del cambio de posicion y de cambio de color ya que no es necesario para este ejercicio.
 
+El HelloWorldPlayer del ejercicio de ejemplo pasara a llamarse PlayerSimple en un principio intente ir sacando codigo poco a poco minimizando funcionalidad pero finalmente opte por reescribirlo desde el principio. 
+
