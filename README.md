@@ -12,3 +12,8 @@ Un pequeno informe cun par de capturas que demostren que o xogo funciona e coas 
 
 O enderezo de github que contén o proxecto
 
+
+## Informe
+
+Al principio cambié el script de Ejemplo llamado HelloWorlManager y lo renombré GameManager después eliminé los botones de Server ya que no lo usaremos.Tmbien elimine los metodos encargados ycambio de posicion y de cambio de color ya que no es necesario para este ejercicio.
+
