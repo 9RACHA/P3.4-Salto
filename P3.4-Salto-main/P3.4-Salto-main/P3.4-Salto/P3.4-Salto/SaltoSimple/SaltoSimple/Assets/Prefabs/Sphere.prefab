@@ -13,9 +13,16 @@ GameObject:
   - component: {fileID: 5502735590934192469}
   - component: {fileID: 5502735590934192468}
   - component: {fileID: 5502735590934192465}
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   - component: {fileID: 5502735590934192492}
   - component: {fileID: 6079117853382218921}
   - component: {fileID: 8333099700135801626}
+=======
+  - component: {fileID: 5502735590934192464}
+  - component: {fileID: 5502735590934192492}
+  - component: {fileID: 5502735590934192495}
+  - component: {fileID: 5502735590934192494}
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -66,7 +73,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   - {fileID: 2100000, guid: 22842ac19efc04a40af86e0e26e1fd56, type: 2}
+=======
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,6 +126,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadMovimiento: 4
   fuerzaSalto: 4
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
+=======
+--- !u!114 &5502735590934192464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5502735590934192471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
 --- !u!54 &5502735590934192492
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,7 +161,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
 --- !u!114 &6079117853382218921
+=======
+--- !u!114 &5502735590934192495
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,7 +174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5502735590934192471}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   m_Script: {fileID: 11500000, guid: 808a9e608c50cb54082ff9210e2a8e34, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -157,7 +195,11 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
 --- !u!114 &8333099700135801626
+=======
+--- !u!114 &5502735590934192494
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5502735590934192471}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:P3.4-Salto-main/P3.4-Salto-main/P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -173,3 +216,8 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+=======
+  m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> 8f263033affb4fcfa4840eb4e944161795ad270f:P3.4-Salto/P3.4-Salto/SaltoSimple/SaltoSimple/Assets/Prefabs/Sphere.prefab
