@@ -23,4 +23,9 @@ Al iniciar el proyecto:
 Elimine el boton del server ya que no sera necesario
 ![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/ebcb03b7-abc9-45c2-a3fa-8ea321d62a58)
 
+Al pulsar el boton Host:
+![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/b2ba40ad-ed56-4e55-85eb-46a966662a9c)
+El Player spawneado aparecerá en el centro de la escena ya que se elimino la opcion de que se ubicara en un lugar aleatorio delimitado.
+Salta y se mueve correctamente.
+
 
