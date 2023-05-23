@@ -19,3 +19,8 @@ Al principio cambi√© el script de Ejemplo llamado HelloWorlManager y lo renombr√
 
 El HelloWorldPlayer del ejercicio de ejemplo pasara a llamarse PlayerSimple en un principio intente ir sacando codigo poco a poco minimizando funcionalidad pero finalmente opte por reescribirlo desde el principio. 
 
+Al iniciar el proyecto:
+Elimine el boton del server ya que no sera necesario
+![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/ebcb03b7-abc9-45c2-a3fa-8ea321d62a58)
+
+
