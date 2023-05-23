@@ -33,4 +33,12 @@ Al pulsar el cliente desde la build:
 ![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/f4df8dcd-b742-4030-b232-a892a04b5b21)
 Si no hubo ningun input de movimiento de flechas o salto, esta sera la posicion por defecto, ya que el nuevo player cliente tambien aparecera en el centro de la escena
 
+Muevo el player Cliente hacia la izquierda:
+![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/c94eed73-5dce-455d-acbc-46382188f673)
+
+Muevo el Player Host hacia la derecha:
+![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/62eca46e-d7d9-49f6-a355-873bd24711d4)
+
+
+
 
