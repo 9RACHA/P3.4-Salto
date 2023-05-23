@@ -41,7 +41,9 @@ Muevo el Player Host hacia la derecha:
 
 ![image](https://github.com/9RACHA/P3.4-Salto/assets/66274956/d88c8f10-bc5c-4b39-8fb6-c74dcf1ac8e2)
 Al heredar de la clase NetworkTransform permite sincronizar objetos entre multiples clientes.
+
 El metodo OnIsServerAuthoritative determina si el servidor o el cliente es responsable de actualizar la posicion del player.
+
 Al devolver falso el cliente es responsable de actualizar la posicion.
 
 
